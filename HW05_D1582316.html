@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<!-- 宣告使用 HTML5；DOCTYPE 是文件類型宣告，不需要結束標籤。 -->
+<html lang="zh-Hant">
+<!-- html 包住整份文件；lang="zh-Hant" 表示主要使用繁體中文。 -->
+<head>
+    <!-- head 放網頁資訊；這些資訊不會直接成為頁面中的報導文字。 -->
+    <meta charset="UTF-8">
+    <!-- UTF-8 可正確處理中文；meta 是空元素，不寫結束標籤。 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- viewport 讓行動裝置使用裝置寬度 -->
+    <meta name="description" content="走進一中街商圈，認識青春歷史、特色美食與流行購物，透過清單、表格、照片、地圖和影片閱讀城市故事。">
+    <!-- author 標示作者學號與姓名 -->
+    <meta name="author" content="李宜宸">
+    <!-- SEO 機器人爬蟲指示與 Open Graph 社群分享資訊 -->
+    <meta name="robots" content="index, follow">
+    <meta property="og:type" content="article">
+    <meta property="og:locale" content="zh_Hant">
+    <meta property="og:title" content="一中街商圈報導｜青春與美食的城市記憶">
+    <meta property="og:description" content="走進一中街商圈，認識青春歷史、特色美食與流行購物，透過清單、表格、照片和影片閱讀城市故事。">
+    <meta property="og:image" content="images/yizhong.jpg">
+    <meta property="og:image:alt" content="熱鬧的一中街商圈街景與人潮">
+    <title>一中街商圈報導｜青春與美食的城市記憶</title>
+</head>
+
+<body>
+    <!--
+        第五次作業：一頁式一中街商圈報導（含語意結構、Google 地圖與 SEO）。
+        本範例僅使用 HTML，保留瀏覽器預設呈現，不加入 CSS 或 JavaScript。
+        使用一致的四個空格縮排；成對標籤都明確寫出結束標籤。
+    -->
+
+    <!-- header 是頁首；id="top" 是下方「回到頁首」連結的目的地。 -->
+    <header id="top">
+        <!-- h1 是本頁主標題；h2 用於各章節，依內容階層選用標題。 -->
+        <h1>一中街商圈：青春與美食的城市記憶</h1>
+        <p>從美味小吃到流行購物，一起感受台中的活力風貌。</p>
+        <!-- time 的 datetime 以標準日期格式提供機器可讀的日期。 -->
+        <p>作者：李宜宸｜報導整理日期：<time datetime="2026-10-15">2026 年 10 月 15 日</time></p>
+        <p><small>本文為資料整理型教學報導，非現場採訪紀錄。</small></p>
+    </header>
+
+    <!-- nav 表示導覽區；href="#名稱" 會跳到本頁相同 id 的元素。 -->
+    <nav aria-label="報導目錄">
+        <h2>報導目錄</h2>
+        <ul>
+            <li><a href="#intro">一、商圈簡介</a></li>
+            <li><a href="#highlights">二、商圈特色與逛街順序</a></li>
+            <li><a href="#table">三、重點主題區域比較表</a></li>
+            <li><a href="#photo">四、商圈意象照片</a></li>
+            <li><a href="#video">五、影音報導</a></li>
+            <li><a href="#map">六、商圈地理位置與地圖</a></li>
+            <li><a href="#sources">七、資料來源</a></li>
+        </ul>
+    </nav>
+
+    <!-- hr 表示內容主題的分隔，也是沒有結束標籤的空元素。 -->
+    <hr>
+
+    <!-- main 包住本頁主要內容；article 表示可獨立閱讀的完整報導。 -->
+    <main>
+        <article aria-label="一中街商圈專題報導">
+            <!-- section 將報導分成有標題的章節；同一頁中的 id 不可重複。 -->
+            <section id="intro">
+                <h2>一、商圈簡介</h2>
+                <!-- p 表示段落；strong 強調重要資訊，mark 標示閱讀焦點。 -->
+                <p>
+                    一中街商圈位於台中市北區，緊鄰 <strong>台中一中</strong>、國立臺灣體育運動大學與國立臺中科技大學。
+                    自 1980 年代補習班與學校聚落發展以來，逐漸匯聚了大量學生人潮，
+                    成為台中最具代表性的青年文化與流行消費商圈之一。
+                </p>
+                <p>
+                    商圈內最具代表性的是多樣化的<strong>平價美食與流行服飾</strong>。
+                    從傳統經典小吃到創意潮流料理，一中街不僅是學生放學後的好去處，
+                    也是外地遊客來台中體驗在地夜市文化與購物體驗的首選地標。
+                </p>
+                <p>
+                    從歷史悠久的水利大樓到周邊延伸的展會商場，一中街商圈記錄著世代學子的青春歲月。
+                    本篇以特色整理與建議逛街順序，介紹這座充滿活力的熱鬧商圈。
+                </p>
+                <!-- br 僅用於同段文字中需要的換行；用 mark 標示閱讀焦點。 -->
+                <p>商圈位置：台中市北區一中街（鄰近三民路三段與育才街）。<br>閱讀重點：<mark>平價美食、流行購物與青年文化</mark>。</p>
+            </section>
+
+            <section id="highlights">
+                <h2>二、商圈特色與逛街順序</h2>
+                <h3>值得留意的三個特色</h3>
+                <!-- ul 是無序清單；li 是個別項目，適合不分先後的資訊。 -->
+                <ul>
+                    <li><strong>平價美食：</strong>匯集各式經典雞排、手搖飲料與特色攤販，CP 值極高。</li>
+                    <li><strong>流行購物：</strong>服飾店、鞋店與文具雜貨密集，緊貼青年流行趨勢。</li>
+                    <li><strong>文教氣息：</strong>周邊學校與補習大樓林立，洋溢獨特的學生青春氛圍。</li>
+                </ul>
+
+                <h3>建議逛街順序</h3>
+                <p>以下是本報導規劃的散步建議，並非官方指定路線。</p>
+                <!-- ol 是有序清單；瀏覽器會依 li 的排列產生編號。 -->
+                <ol>
+                    <li>從三民路入口進入商圈，先瀏覽育才街周邊的經典小吃攤位。</li>
+                    <li>前往水利大樓周邊，體驗學生聚落的熱鬧氛圍與經典飲料店。</li>
+                    <li>走進一中街主幹道與巷弄，挑選流行服飾與生活雜貨。</li>
+                    <li>最後前往周邊的商場或休憩空間，享受美食並整理今日的購物戰利品。</li>
+                </ol>
+            </section>
+
+            <!-- aside 表示與報導相關的走讀補充提醒，可從主文省略而不影響主要論述 -->
+            <aside aria-label="走讀補充提醒">
+                <h3>走讀補充提醒：逛街安全與環保</h3>
+                <p>
+                    商圈假日人潮眾多，請隨身保管好個人貴重物品。同時，逛街品嚐美食之餘，也請多利用商圈設置的分類垃圾桶，共同維護乾淨整潔的逛街環境。
+                </p>
+            </aside>
+
+            <section id="table">
+                <h2>三、重點主題區域比較表</h2>
+                <!--
+                    table 用於呈現資料，不用來排版整個網頁。
+                    本作業維持純 HTML，保留 border="1" 屬性。
+                -->
+                <table border="1">
+                    <!-- caption 是表格標題，放在 table 內最前面。 -->
+                    <caption>一中街商圈三處重點區域的特色與觀察重點</caption>
+                    <!-- thead 包住表頭；tr 是一橫列；th 是標題儲存格。 -->
+                    <thead>
+                        <tr>
+                            <!-- scope="col" 表示這個 th 是整欄的標題。 -->
+                            <th scope="col">區域名稱</th>
+                            <th scope="col">主要特色</th>
+                            <th scope="col">建議觀察重點</th>
+                        </tr>
+                    </thead>
+                    <!-- tbody 包住資料列；td 是一般資料儲存格。 -->
+                    <tbody>
+                        <tr>
+                            <!-- scope="row" 表示這個 th 是本列的標題。 -->
+                            <th scope="row">育才街與一中街口</th>
+                            <td>美食攤販聚集核心</td>
+                            <td>傳統小吃攤位排列與人潮動線</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">水利大樓周邊</th>
+                            <td>補習班與學生生活圈</td>
+                            <td>學生放學後的飲食與休閒文化</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">潮流巷弄區</th>
+                            <td>特色服飾與獨立小店</td>
+                            <td>櫥窗設計與當季流行服飾趨勢</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <section id="photo">
+                <h2>四、商圈意象照片</h2>
+                <!-- figure 將圖片與圖說組成一個單位；figcaption 是圖說。 -->
+                <figure>
+                    <!--
+                        img 是空元素，不寫結束標籤。
+                        src 指定圖片網址；alt 描述照片內容。
+                    -->
+                    <img
+                        src="images/yizhong.jpg"
+                        alt="熱鬧的一中街商圈街景與人潮"
+                        width="480">
+                    <figcaption>
+                        一中街商圈是台中市極具代表性的熱鬧商圈。
+                        圖片來源：<a href="https://supertaste.tvbs.com.tw/infocard/15761" target="_blank" rel="noopener noreferrer">食尚玩家</a>。
+                    </figcaption>
+                </figure>
+            </section>
+
+            <section id="video">
+                <h2>五、影音報導</h2>
+                <p>透過下方影片認識一中街商圈，再比較影片畫面與本文介紹的特色。</p>
+                <!--
+                    iframe 將 YouTube 播放器嵌入本頁，需要明確的結束標籤。
+                -->
+                <iframe
+                    width="480"
+                    height="270"
+                    src="https://www.youtube.com/embed/58_n1tT2puE?si=oU1YsraTLx31-dU3"
+                    title="一中街商圈介紹影片"
+                    allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    allowfullscreen>
+                </iframe>
+                <!-- a 提供一般影片連結；播放器無法播放時仍能前往 YouTube。 -->
+                <p>
+                    若播放器無法播放，請
+                    <a href="https://youtu.be/58_n1tT2puE?si=jSpprKxkMJ8peKWH" target="_blank" rel="noopener noreferrer">在 YouTube 觀看一中街介紹影片（另開分頁）</a>。
+                </p>
+                <p><small>影片為外部作者發布之旅遊或美食介紹，現場狀況請以最新官方資訊為準。</small></p>
+            </section>
+
+            <section id="map">
+                <h2>六、商圈地理位置與地圖</h2>
+                <p>一中街商圈位於台中市北區，交通便利。下方為 Google 地圖定位：</p>
+                <!--
+                    iframe 嵌入 Google 地圖；移除了 style="border:0;" 並補上 title 屬性。
+                    使用座標格式以確保精準定位。
+                -->
+                <iframe
+                    width="480"
+                    height="300"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7281.209455793925!2d120.68553370000001!3d24.150515799999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34693d68ef0dfe0d%3A0xadd02f1d10fe2a30!2zNDA06Ie65Lit5biC5YyX5Y2A5LiA5Lit6KGX!5e0!3m2!1szh-TW!2stw!4v1792056280572!5m2!1szh-TW!2stw"
+                    title="一中街商圈 Google 地圖位置"
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+                <!-- 一般地圖連結，供嵌入失敗或特殊裝置開啟 -->
+                <p>
+                    若地圖無法正常顯示，請至
+                    <a href="https://maps.app.goo.gl/LTdA2pGU9mrRDRkSA" target="_blank" rel="noopener noreferrer">Google 地圖檢視一中街商圈（另開分頁）</a>。
+                </p>
+                <p><small>地址參考：台中市北區一中街與三民路三段交叉口一帶。</small></p>
+            </section>
+
+            <section id="sources">
+                <h2>七、資料來源</h2>
+                <p>本報導依下列資料整理，逛街順序與觀察建議由作者規劃。</p>
+                <ul>
+                    <li><a href="https://supertaste.tvbs.com.tw/infocard/15761" target="_blank" rel="noopener noreferrer">食尚玩家：一中街商圈介紹</a></li>
+                    <li><a href="https://youtu.be/58_n1tT2puE?si=jSpprKxkMJ8peKWH" target="_blank" rel="noopener noreferrer">YouTube：一中街美食與商圈介紹影片</a></li>
+                    <li><a href="https://maps.app.goo.gl/LTdA2pGU9mrRDRkSA" target="_blank" rel="noopener noreferrer">Google 地圖：一中街商圈地理位置</a></li>
+                </ul>
+                <p><small>資料整理日期：2026 年 10 月 15 日。</small></p>
+            </section>
+        </article>
+    </main>
+
+    <hr>
+    <!-- footer 是頁尾；作者與回到頁首連結 -->
+    <footer>
+        <p>一中街商圈報導 ｜ 作者：李宜宸</p>
+        <p><a href="#top">回到頁首</a></p>
+    </footer>
+</body>
+</html>
